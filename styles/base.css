@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Sansita", sans-serif;
+  justify-content: center;
+}
+
+header {
+  background-color: cadetblue;
+  text-align: center;
+}
+nav {
+  background-color: aqua;
+  margin: 0 auto;
+}
+nav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+#myImage {
+  width: 80%;
+  float: right;
+}
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 95%;
+}
+#aboutMe {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.card h2 {
+  text-align: center;
+  background-color: lightblue;
+  margin: 0 auto;
+}
+.card {
+  padding: 1rem;
+  border: 2px dashed lightblue;
+  margin: 10px auto;
+}
+.flag {
+  float: left;
+  width: 70%;
+}
+.zimbabwe {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+h3 {
+  text-align: center;
+}
+
+footer {
+  background-color: cadetblue;
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+}
