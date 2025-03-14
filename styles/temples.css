@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.roboto body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* mobile *********
+*****************/
+nav ul li {
+  list-style: none;
+}
+
+header {
+  background-color: cadetblue;
+  text-align: center;
+}
+footer {
+  background-color: cadetblue;
+  text-align: center;
+}
+
+header {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px #333;
+  background-color: cadetblue;
+  text-align: center;
+}
+
+header,
+main {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+nav {
+  background-color: #36454f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: larger;
+}
+
+nav a:hover {
+  text-decoration: underline double;
+  background-color: #eee;
+  color: #000;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 25px;
+  place-items: center;
+}
+
+/*Responsive menu*/
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌";
+}
+.navigation.open a {
+  display: block;
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
