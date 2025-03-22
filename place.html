@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="author" content="Namwera Proud">
+    <meta name="description" content="The subject of the page is a country or place where you live.">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Zimbabwe</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="hero">
+                <picture>
+                    <source media="(min-width:1000px )" srcset="images/place-hero-large.webp">
+                    <source media="(min-width:500px )" srcset="images/place-hero-medium.webp">
+                    <img loading="lazy" src="images/place-hero-small.webp" alt="Landmark in Marondera" width="500"
+                        height="250">
+                </picture>
+            </div>
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li>Area: 390,757 km2 </li>
+                    <li>Population: 16,868,409</li>
+                    <li>Capital: Harare</li>
+                    <li>Language: Shona,Ndebele</li>
+                    <li>Currency: </li>
+                    <li>Time Zone: UTC+2 (CAT[14])</li>
+                    <li>Calling Code: +263</li>
+                    <li>Internet TLD: .zw</li>
+
+                </ul>
+
+            </section>
+            <section class="weather">
+                <h2 id="weatherH2">Weather</h2>
+                <img loading="lazy" id="weather-svg" src="images/cloud-sun-icon.svg" alt="Weather Icon">
+                <ul>
+                    <li>Temperature: 12℃</li>
+                    <li>Conditions: Partly Cloudy</li>
+                    <li>Winds: 5km/h</li>
+                    <li id="wind-chill">Wind Chill:</li>
+                </ul>
+            </section>
+
+
+        </div>
+
+
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            &#x1f410; Namwera Proud
+            &#x1f410; Zimbabwe
+        </p>
+        <p id="lastModified"></p>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+@media (min-width: 760px) {
+  .container img {
+    position: relative;
+  }
+
+  section {
+    position: absolute;
+    padding: 1rem;
+    opacity: 0.7;
+  }
+  .data {
+    width: auto;
+    top: 90px;
+    left: 20px;
+  }
+  .weather {
+    top: 300px;
+    right: 20px;
+  }
+  #weather-svg {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .weather {
+    top: 420px;
+    right: 20px;
+  }
+}
