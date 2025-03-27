@@ -1,0 +1,22 @@
+h1,
+footer {
+  text-align: center;
+}
+img {
+  padding: 1rem;
+  display: block;
+  margin: auto;
+  animation: fade 10s;
+}
+picture {
+  align-items: center;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W04 Learning Activity: Lazyloading Images</title>
+
+    <meta name="author" content="Namwera Proud">
+    <meta name="description"
+        content="A small webpage with multiple images stacked vertically on a single page. The images will load only when they come into view as the user scrolls.">
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <h1>Lazy Loading</h1>
+        <picture><img src="images/coast.jpg" alt="Picture of a the coast of an ocean" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="images/bird.jpg" alt="Picture of a bird" loading="lazy" width="400" height="600"></picture>
+        <picture><img src="images/buildings.jpg" alt="Picture of buildings" loading="lazy" width="400" height="600">
+        </picture>
+        <picture><img src="images/plant.jpg" alt="Picture of a green plant" loading="lazy" width="400" height="600">
+        </picture>
+        <picture><img src="images/flower.jpg" alt="Picture of white flowers" loading="lazy" width="400" height="600">
+        </picture>
+        <picture><img src="images/trains.jpg" alt="Picture of a trin station" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            &#x1f410; Namwera Proud
+            &#x1f410; Zimbabwe
+        </p>
+        <p id="lastModified"></p>
+
+    </footer>
+</body>
+
+</html>
