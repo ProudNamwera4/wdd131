@@ -7,6 +7,7 @@ const oldButton = document.querySelector("#old");
 const newButton = document.querySelector("#new");
 const largeButton = document.querySelector("#large");
 const smallButton = document.querySelector("#small");
+const h1Heading = document.querySelector("#heading");
 
 hamButton.addEventListener("click", () => {
   navigation.classList.toggle("open");
@@ -121,11 +122,13 @@ function createCard(filteredTemples) {
 
 homeButton.addEventListener("click", () => {
   grid.textContent = "";
+  h1Heading.innerHTML = "Home";
   createCard(temples);
 });
 
 oldButton.addEventListener("click", () => {
   grid.textContent = "";
+  h1Heading.innerHTML = "Old";
   const oldTemples = temples.filter((temple) => {
     const dedicationYear = temple.dedicated.split(",")[0].trim();
     return dedicationYear < 1900;
@@ -136,6 +139,7 @@ oldButton.addEventListener("click", () => {
 
 newButton.addEventListener("click", () => {
   grid.innerHTML = "";
+  h1Heading.innerHTML = "New";
   const newTemples = temples.filter((temple) => {
     const dedicationYear = temple.dedicated.split(",")[0].trim();
     return dedicationYear > 2000;
@@ -145,6 +149,7 @@ newButton.addEventListener("click", () => {
 
 largeButton.addEventListener("click", () => {
   grid.innerHTML = "";
+  h1Heading.innerHTML = "Large";
   const largeTemples = temples.filter((temple) => {
     return temple.area > 90000;
   });
@@ -153,6 +158,7 @@ largeButton.addEventListener("click", () => {
 
 smallButton.addEventListener("click", () => {
   grid.innerHTML = "";
+  h1Heading.innerHTML = "Small";
   const smallTemples = temples.filter((temple) => {
     return temple.area < 10000;
   });
