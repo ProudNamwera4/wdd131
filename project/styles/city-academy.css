@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  color: #333;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #2e4053;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #ffc107;
+  color: #333;
+  padding: 10px;
+  font-size: 18px;
+}
+nav a:hover {
+  text-decoration: underline double;
+  background-color: #2e4053;
+  color: #f1c40f;
+}
+
+main {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+footer {
+  background-color: #2e4053;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+}
+
+button {
+  background-color: #8bc34a;
+  color: #2e4053;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.hero img {
+  max-width: 100%;
+  padding-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+.news img {
+  width: 400px;
+  height: auto;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+section {
+  background-color: #f1c40f;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+nav a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: larger;
+}
+
+/*Responsive menu*/
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌";
+}
+.navigation.open a {
+  display: block;
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Hero Join Button*/
+
+.hero {
+  position: relative;
+}
+.hero button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/*abous us page*/
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  padding: 0.5rem;
+}
+.about-container img {
+  display: block;
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+.about-container p {
+  text-align: center;
+}
+
+/*Player Signup page (Form)*/
+form {
+  background-color: #f1c40f;
+}
+form label {
+  display: block;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+input[type="submit"] {
+  display: block;
+  width: 97%;
+  max-width: 400px;
+  background-color: white;
+  height: 3rem;
+}
+textarea {
+  display: block;
+  width: 95%;
+  max-width: 400px;
+  height: 5rem;
+  margin-left: 0.5rem;
+}
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+  display: block;
+  width: 97%;
+  max-width: 400px;
+  height: 2.8rem;
+}
+form label {
+  display: block;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+#join-academy-button {
+  background-color: #8bc34a;
+  color: #fff;
+}
+#button-label {
+  padding-bottom: 1rem;
+}
+
+/*News*/
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  text-align: center;
+  gap: 1rem;
+}
+.news-card {
+  padding: 1rem;
+  background-color: #8bc34a;
+}
+section h3 {
+  color: #2e4053;
+}
+
+/*Player Profile*/
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+.players-grid img {
+  width: 300px;
+  max-width: 480px;
+  display: block;
+  padding: 1rem;
+}

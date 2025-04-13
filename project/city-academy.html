@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Namwera Proud">
+    <meta name="description"
+        content="This website designing and developing my project. The purpose of this assignment is for me to organize my plans for the proposed project.">
+
+    <title>City Academy FC</title>
+
+    <link rel="stylesheet" href="styles/city-academy.css">
+    <link rel="stylesheet" href="styles/city-academy-large.css">
+
+    <script src="scripts/city-academy.js" defer></script>
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/button.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>City Academy FC.com</h1>
+        <nav>
+
+            <ul class="navigation">
+                <li><a href="city-academy.html" class="active">Home</a></li>
+                <li><a href="player-profile.html">Players</a></li>
+                <li><a href="player-signup.html">Signup</a></li>
+                <li><a href="about-the-club.html">About</a></li>
+            </ul>
+            <button type="button" id="menu">I</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width:1000px )" srcset="images/hero-large.webp">
+                <source media="(min-width:500px )" srcset="images/hero-medium.webp">
+                <img loading="lazy" src="images/hero-small.webp" alt="Player training on the pitch" width="500"
+                    height="250">
+            </picture>
+            <button id="hero-join-button">Join Us</button>
+
+        </div>
+
+        <div class="about-container">
+            <section class="content-card">
+                <div class="content-card-image">
+                    <div class="responsive-image responsive-image--transparent">
+
+                        <img loading="lazy" src="images/school-soccer-activity.webp" alt="Arial view of the stadium">
+                    </div>
+                </div>
+                <div class="content-card-details">
+                    <h3>General Information</h3>
+                    <p>Details about the City Academy training ground, mascots, our customer charter and much
+                        more...</p>
+                </div>
+            </section>
+
+            <section class="content-card">
+                <div class="content-card-image">
+                    <div class="responsive-image">
+                        <div class="responsive-image">
+                            <img loading="lazy" src="images/girl-soccer-school.webp" alt="Picture of old stadium">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card-details">
+                    <h3>Football Project</h3>
+                    <p>Information about our football programes and other patnerships we deliver...</p>
+
+                </div>
+            </section>
+        </div>
+
+
+        <section class="news">
+            <h2>Latest News / Upcoming Events</h2>
+            <div class="news-container">
+                <div class="news-card">
+
+
+                    <p>
+                    <h3>Injury Update</h3>
+                    <p> See wchich players are currently suffering from setbacks on their road to recovery</p>
+                    <img loading="lazy" src="images/injury.webp" alt="Player injured">
+                </div>
+                <div class="news-card">
+
+                    <img loading="lazy" src="images/manager.webp" alt="Manager in press conference">
+
+                    <h3>LineUp for Upcoming match</h3>
+                    <p>The Manager has confirmed his line-up for our next league match.</p>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            &#x1f410; Namwera Proud
+            &#x1f410; Zimbabwe
+        </p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
